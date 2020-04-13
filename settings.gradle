@@ -21,4 +21,9 @@ include "databases:backlog-database"
 include "databases:registration-database"
 include "databases:timesheets-database"
 
+include "platform-services:oauth-server"
+
 include "integration-test"
+include 'platform-services:oauth-server'
+findProject(':platform-services:oauth-server')?.name = 'oauth-server'
+
